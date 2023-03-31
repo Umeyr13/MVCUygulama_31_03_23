@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>     <b>Tüm hakları saklıdır. &copy;</b></div>
+    <div>
+        @RenderBody()
+    </div>
+    <div>
+        <style>
+            .block {
+                display: block;
+                margin: 14px;
+                border: 3px dotted #b76565;
+                padding: 5px;
+            }
+
+            #menu li {
+                display: inline-block;
+                width: 100px;
+                height: 30px;
+                border: 1px solid #000000;
+                text-align: center;
+                margin: 5px;
+                line-height: 30px;
+                background-color: #c0a92b
+            }
+
+            #menu a {
+                text-decoration: none;
+                color: black;
+            }
+
+            #menu li:hover {
+                background-color: #ffd800;
+            }
+
+                #menu li:hover a {
+                    color: #808080;
+                }
+        </style>
+        @*Header*@
+        <div class="block" id="menu">
+
+            <ul>
+                @*<li>@Html.ActionLink("Anasayfa", "Anasayfa", "Home")</li>
+                <li>@Html.ActionLink("Hakkımızda", "Hakkimizda", "Home")</li>
+                <li>@Html.ActionLink("İletişim", "Iletisim", "Home")</li>*@
+            </ul>
+
+        </div>
+
+    </div>
+</body>
+</html>

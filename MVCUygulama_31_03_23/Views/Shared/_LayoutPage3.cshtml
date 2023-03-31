@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "~/Views/Shared/_LayoutPage1.cshtml";
+}
+
+<div class="block2" style="width:500px">
+    @RenderBody()
+</div>
+
+<div class="block2" style="float:inherit">
+    <h4>Burası LayoutPage3</h4>
+    <ul>
+        <li><b>2. Adım ~/Views/Shared/_LayoutPage1.cshtml Buraya gider</b></li>
+        <li>Dolor sit.</li>
+    </ul>
+</div>
+
+<div>
+    @RenderSection( "Linkler",false)  @*Section göndermek zorunlu değil dedik false ile*@ 
+</div>
